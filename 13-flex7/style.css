@@ -1,0 +1,87 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 72px;
+  background: darkmagenta;
+  color: white;
+  font-size: 32px;
+  font-weight: 900;
+  padding-left: 12px;
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  height: 72px;
+  background: #eee;
+  color: darkmagenta;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-contents{
+  display: flex;
+  flex: 1;
+}
+
+/* Did not know or have forgotten that the default of flex-grow is '0'
+  To not forget, flex-shrink's default is '0' and flex-basis is 'auto' */
+
+  @media screen and (max-width: 748px) {
+    aside {
+        display: none;
+    }
+}
+
+aside {
+  min-width: 300px;
+  background: royalblue;
+  box-sizing: border-box;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0px;
+  padding: 16px;
+}
+
+li{
+  margin-bottom: 12px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+}
+
+main{
+  display: flex;
+  align-items: flex-start;
+}
+
+.card-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  gap: 36px;
+}
+
+.card {
+  height: 300px;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #eee;
+  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+  border-radius: 4px;
+  padding: 1em;
+}
